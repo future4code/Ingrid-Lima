@@ -1,0 +1,25 @@
+.fundo-logo-rede {
+background: rgb(33, 206, 33);
+
+text-align: center;
+ 
+}
+.centralizar {
+    text-align: center;
+}
+
+.foto {
+    height: 80px;
+    width: 80px;
+}
+.foto2 {
+    height: 250px;
+    width: 250px;
+}
+
+.fundo {
+    background:rgb(33, 206, 33) ;
+    color: honeydew;
+    height: 50 px;
+    width: 20px;
+}
