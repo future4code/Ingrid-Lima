@@ -1,0 +1,43 @@
+body{
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.foto{
+    height: 250px;
+    width: 250px;
+border-radius: 50%;
+}
+
+img{
+    background-color: blanchedalmond;
+    height: 250px;
+    width: 250px;
+}
+.texto{
+    background-color: black;
+    color: white;
+    margin: 0px;
+}
+.botoes{
+    background-color: black;
+    
+}
+.fundo-botoes {
+    background-color: white;
+    color: black;
+    height: 30px;
+    width: 200px ;
+}
+.centro {
+    text-align: center;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.foto2{
+    height: 250px;
+    width: 250px;
+}
