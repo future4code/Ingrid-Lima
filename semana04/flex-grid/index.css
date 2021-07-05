@@ -1,0 +1,21 @@
+#container {
+    display: flex;
+}
+#container > h1 {
+    display: flex;
+    background-color: mediumvioletred;
+   justify-content: space-around;
+    height: 40px;
+}
+    
+#icones {
+    display: flex;
+    background-color:#f2d0e0 ;
+   flex-direction: column;
+   align-items: flex-start;
+    
+}
+.img{
+    width: 20px;
+    height: 20px;
+}
