@@ -83,3 +83,29 @@ h2{
     margin-left: auto;
     margin-right: auto;
 }
+@media screen and (min-device-width: 320px) and (max-device-width: 480px){
+    main{
+        grid-template-columns: 1fr;
+        margin: 40px;
+        column-gap: 50px;
+
+}
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    video{
+        height: 50vh;
+        width: 44vh;
+
+
+    
+     
+    }
+
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .container{
+        width: 50px;
+        padding: 20px;
+    }
+}
+
