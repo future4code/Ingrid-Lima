@@ -19,28 +19,28 @@ import axios from "axios"
     }
     
     fazerCadastro =() => {
-        const url ="https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users"
+       
+        const url = "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users"
         const body = {
             name: this.state.nome,
             email: this.state.email
         }
-        axios.post ( url, body, {
-            headers: {
-                Authrization: "ingrid-lima"
-            }
-        
-        })
-        .then((res) => {
-            alert ("Usuário(a) cadastrado(a) com sucesso!!")
-            this.setState({nome:"", email:""})
 
-        })
-        .catch ((err) => {
-            alert(err.response.data.message)
-
-        })
-
+       axios.post(url, body, {
+           headers: {
+            Authorization: "ingrid-lima"
+           }
+       })
+       .then((res) =>{
+       alert("Usuário cadastrado com sucesso")
+       this.setState({nome:"", email:""})
+       })
+       .catch((err) => {
+           alert(err.response.data.message)
+           
+       })
     }
+
     
     
     render() {
