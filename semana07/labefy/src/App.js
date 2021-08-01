@@ -2,6 +2,7 @@ import React from "react";
 import { createGlobalStyle } from 'styled-components'
 import AddPlaylist from "./components/AddPlaylist";
 import AddMusica from "./components/AddMusica";
+import ListaPlaylist from "./components/ListaPlaylist";
 
 
 
@@ -26,6 +27,12 @@ render (){
 <AddPlaylist/>
  
 <AddMusica/>
+
+<br/><br/><br/>
+
+
+
+<ListaPlaylist/>
    
     </div>
   );

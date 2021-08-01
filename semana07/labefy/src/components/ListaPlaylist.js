@@ -83,8 +83,8 @@ render (){
     return (
         <div>
         <GlobalStyle/>
-        <button onClick={this.props.irParaInicio}>Voltar ao inicio</button>
-        <h2>Playlist</h2>
+            <h2>Playlist</h2>
+            <button onClick={this.props.irParaInicio}>Voltar ao inicio</button>
         {ListaPlaylist}
 
 
