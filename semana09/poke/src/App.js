@@ -16,7 +16,7 @@ const App = () => {
       .get("https://pokeapi.co/api/v2/pokemon/?limit=151")
       .then(response => {
         
-        this.setState({ pokeList: response.data.results });
+        setPokeList(response.data.results );
       })
       .catch(err => {
         console.log(err);
