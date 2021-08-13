@@ -13,32 +13,82 @@ import styled from "styled-components"
     width: 200px;
     flex-direction: column;
     align-items: center;
-    // margin-left: 200px;
-    margin-top: 30px;
+     margin-left: 50px;
+    margin-top: 20px;
     img {
         width: 300px;
         height: 300px;
-        border: 1px solid black;
+        border-radius:50px;
+        margin-left: 20px;
+
     }
     h3 {
         display: flex;
         justify-content: center;
+        text-aling:center;
+        margin-right: 50px;
     }
     h5 {
         display: flex;
         justify-content: center;
         text-aling:center;
-        color: red;
+        align-items: center;
+        color: purple;
         width: 300px;
-        
-    }
+        margin-left: 20px;
     `
+    const EstiloBotao = styled.div`
+display: flex; 
+align-items: center;
+justify-content: center;
+
+gap: 50px;
+gap: 30px;
+margin-left: 20px;
+button {
+    padding: 5px;
+    color: white;
+    background-color:purple;
+    border-radius : 10px;
+}
+`
+const EstiloBotao2 = styled.div`
+display: flex; 
+align-items: center;
+justify-content: center;
+
+gap: 50px;
+gap: 100px;
+margin-left: 120px;
+button {
+    padding: 20px;
+    color: white;
+    background-color:#3de3c5;
+    border-radius : 50%;
+}
+`
 
 
    
     
     
     function Body() {
+        const [limpar, setLimpar] = useState([]);
+
+
+
+        const deletarMatch = () => {
+            axios
+                .put(
+                    "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/:aluno/clear"
+                )
+                .then((response) => {
+                    alert("Match deletado!")
+                })
+                .catch((error) => {
+                    console.log(error);
+                });
+        }
     
         const [perfil, setPerfil] = useState({})
         const [escolha, setEscolha] = useState(false)
@@ -60,7 +110,7 @@ import styled from "styled-components"
                 });
         }
     
-        const choosePerson = () => {
+        const escolherPessoa = () => {
             const body = { id: perfil.id, choice: true }
             axios
                 .post(
@@ -74,7 +124,7 @@ import styled from "styled-components"
                 })
                 .catch((error) => {
                     console.log(error);
-                    alert("Opa, algo deu errado!");
+                    alert("Ocorreu um erro!");
                 });
         }
     
@@ -85,12 +135,22 @@ import styled from "styled-components"
                     <h3>{perfil.name}</h3>
                     <h5>{perfil.bio}</h5>
                 </CardS>
+
+                <br/>  
                
-            
-                        <button onClick={() => { getPerfil(); }}> No </button>
-                        
-                        <button onClick={() => { choosePerson(); }}> Yes </button>
-                       
+            <EstiloBotao2> 
+                <button onClick={() => { escolherPessoa(); }}> 💖 </button>
+                        <button onClick={() => { getPerfil(); }}> ❌ </button>
+
+                        <br/>
+                      
+                        </EstiloBotao2>
+
+                        <br/><br/>  <br/> 
+
+                        <EstiloBotao> 
+                        <button onClick={() => { deletarMatch() }}>Limpar Match</button>
+                        </EstiloBotao>
             </div>
         );
     }
