@@ -1,41 +1,42 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import AddRecipePage from "../pages/AddRecipePage/AddRecipePage";
 import LoginPage from "../pages/LoginPage/LoginPage"
 import RecipeDetailPage from "../pages/RecipeDetailPage/RecipeDetailPage"
 import SignUpPage from "../pages/SignUpPage/SignUpPage"
 import RecipeListPage from "../pages/RecipeListPage/RecipeListPage"
+import ErrorPage from "../pages/ErrorPage/ErrorPage"
 
 
 
 
-const Router = () => {
+const Router = ({setRightButtonText}) => {
 
 return (
 
-<BrowserRouter>
+
 <Switch>
-    <Route>
-        <LoginPage/>
+    <Route exact path="/login">
+        <LoginPage setRightButtonText={setRightButtonText}/>
     </Route>
-    <Route>
+    <Route exact path="/adicionar-receita">
         <AddRecipePage/>
     </Route>
-    <Route>
+    <Route exact path="/detalhe/:id">
         <RecipeDetailPage/>
     </Route>
-    <Route>
-        <SignUpPage/>
+    <Route exact path="/cadastro">
+        <SignUpPage setRightButtonText={setRightButtonText}/>
     </Route>
-    <Route>
+    <Route exact path="/">
         <RecipeListPage/>
     </Route>
-    <Route>
+    <Route >
         <ErrorPage/>
     </Route>
     
 </Switch>
-</BrowserRouter>
+
 
 
 )
