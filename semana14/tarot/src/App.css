@@ -1,0 +1,97 @@
+.card-container{
+	display: inline-block;
+	text-align: center;
+	margin: 40px;
+}
+
+.card{
+	display: inline-block;
+	text-align: center;
+	margin: 50px;
+}
+
+img{
+	cursor: pointer;
+}
+
+.btn-paginaInicial{
+	width: 200px;
+	height: 45px;
+	font-size: 1.2rem;
+	background-color:black;
+	margin-bottom: 15px;
+	border: none;
+	border-radius: 20px;
+	color: whitesmoke;
+	cursor: pointer;
+}
+
+
+.popup{
+	position: absolute;
+	left: 35%;
+	border: 1px solid;
+	width: 30vw;
+	height: 90vh;
+	background-color: lightgray;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 6px;
+}
+
+.btn-back{
+	background-color: black;
+	color: whitesmoke;
+	border: none;
+	padding: 10px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+
+.load-container{
+	margin-left: 45vw;
+	margin-top: 20vh;
+}
+.loading{
+	border: 3px solid;
+	width: 50px;
+	height: 50px;
+	border-top-color:black;
+	border-radius: 50%;
+	animation: round 1s infinite;
+}
+@keyframes round{
+	to{
+		transform: rotate(1turn);
+	}
+}
+
+
+.back{
+	animation: hide 2s;
+}
+
+
+
+@keyframes hide{
+	from{
+		transform: scale(0);
+	}
+	to{
+		transform: scale(1);
+	}
+}
+
+.character{
+	animation: appear 3s;
+}
+
+@keyframes appear{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}	
