@@ -10,7 +10,7 @@ const TarotCards = (props)=>{
 	const imageBackCard = 'https://dkw5ssdvaqf8l.cloudfront.net/static/psr/br/framework/yii/images/content/pt-br/product/tarot/marselha/back-blue-card.png'
 
 	return<div className='card'>
-			<div>Encontre {props.randomCard.name}</div>			
+			<div>Encontre o {props.randomCard.name}</div>			
 			{showAndHide ? <TarotDetails image={props.image} setShowAndHide={setShowAndHide}
 			name={props.name} randomCard={props.randomCard}/> : null}
 			{!showAndHide ? <img className='back' src={imageBackCard}

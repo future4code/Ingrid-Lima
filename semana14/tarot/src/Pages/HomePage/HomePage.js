@@ -20,7 +20,7 @@ const HomePage = (props)=>{
 
 	return<div>			
 			<div className='btn'>
-			<button className='btn-play' onClick={()=> props.changePage('intro')}>Jogar</button>
+			<button className='btn-play' onClick={()=> props.changePage('intro')}>Comece a Jogar</button>
 			</div>
 			<div className='cardShowed'>
 			{cards.length > 0 ? cards.map(card=>{

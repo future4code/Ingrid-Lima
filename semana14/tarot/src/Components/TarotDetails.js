@@ -16,7 +16,7 @@ const TarotDetails = (props)=>{
 	return<div className='popup'>
 			<div>{props.name}</div>
 			<img src={`${imageUrl}/${props.image}`}/>
-			<p>Descrição:<br/>Lorem ipsum dolor sit amet. In sunt architecto aut 
+			<p>Descrição:<br/><br/>Lorem ipsum dolor sit amet. In sunt architecto aut 
 			accusantium minima aut earum odio sit consequatur officiis. Et iusto 
 			quos ea modi suscipit et doloribus mollitia quo eligendi dolore qui 
 			facilis accusamus aut deserunt eaque.</p>

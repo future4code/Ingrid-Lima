@@ -22,7 +22,7 @@ const TarotInformations = (props)=>{
 	return<div className='card-container'>
       <div>
           <button className='btn-paginaInicial'
-      onClick={()=> props.changePage('home')} >Página inicial</button>
+      onClick={()=> props.changePage('home')} >Voltar as Cartas</button>
       </div>
       {cards.map(card=>{
         return<TarotCards key={card.name}
