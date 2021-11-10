@@ -1,6 +1,5 @@
-<h1> GET POKEMONS! ![pokeball](https://cdn.emojidex.com/emoji/hdpi/pokeball.png "pokeball") CASE POKEMON 
- ![pokeball](https://cdn.emojidex.com/emoji/hdpi/pokeball.png "pokeball")</h1>
-
+## CASE POKEMON 
+ 
 Link do postman: https://documenter.getpostman.com/view/16816866/UVC5FnYD
 
 ## LINGUAGENS UTILIZADAS
